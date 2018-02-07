@@ -12,7 +12,6 @@ body {
 @media (max-width: 767px) {
   body {
     font-size: 16px; } }
-
 h1, h2, h3 {
   color: #d35400;
   margin: 0 0 20px;
@@ -75,9 +74,9 @@ section:not(#skills) {
   .row {
     -webkit-flex-direction: column;
     flex-direction: column; }
+
   [class*="col-"] + [class*="col-"] {
     margin-left: 0; } }
-
 [class*="btn"] {
   border: none;
   border-radius: 10px;
@@ -153,7 +152,6 @@ header {
   header p {
     background: rgba(234, 242, 248, 0.8);
     margin: 0 auto; } }
-
 /* ------------------------------------------- NAVBAR */
 .navbar {
   background: #fff;
@@ -203,22 +201,19 @@ header {
       display: none; }
     .navbar input:not(:checked) ~ label > i:last-of-type {
       display: none; } }
-
 /* ------------------------------------------- SECTION ABOUT */
 #about p {
   text-align: left; }
-
 #about ul {
   display: inline-block;
   /*margin: 0 auto;*/
   margin-left: 20px;
   list-style-position: inside; }
-
 #about .row {
   /*
-        &:first-of-type {
-            @include flexColumn;
-        }*/ }
+  &:first-of-type {
+      @include flexColumn;
+  }*/ }
   #about .row .col-1 p {
     font-size: 16px;
     text-align: center; }
@@ -247,7 +242,6 @@ header {
 @media (max-width: 767px) {
   #skills .pg-group, .skills-img p {
     padding: 0 15px; } }
-
 /* PROGRESS BAR */
 .progressbar {
   background: #617487;
@@ -338,11 +332,9 @@ header {
   .project .hidden-lg {
     border-top: 1px solid #999;
     position: static; } }
-
 @media (max-width: 767px) {
   .project {
     width: 100%; } }
-
 /* ------------------------------------------- ASIDE */
 aside {
   background: #ecf0f1;
@@ -366,16 +358,18 @@ aside {
       aside .icons > svg:nth-of-type(2) {
         fill: #1572B6; }
       aside .icons > svg:nth-of-type(3) {
-        fill: #00C8FF; }
+        fill: #DD0031; }
       aside .icons > svg:nth-of-type(4) {
-        fill: #563D7C; }
+        fill: #00C8FF; }
       aside .icons > svg:nth-of-type(5) {
-        fill: #CC6699; }
+        fill: #563D7C; }
       aside .icons > svg:nth-of-type(6) {
-        fill: #21759B; }
+        fill: #CC6699; }
       aside .icons > svg:nth-of-type(7) {
-        fill: #181717; }
+        fill: #21759B; }
       aside .icons > svg:nth-of-type(8) {
+        fill: #181717; }
+      aside .icons > svg:nth-of-type(9) {
         fill: #F14E32; }
 
 @keyframes pulse {
@@ -387,11 +381,9 @@ aside {
     transform: scale(1.04); }
   25%, 75% {
     transform: scale(1.05); } }
-
 /* ------------------------------------------- TIMELINE SECTION */
 #timeline .row {
   margin: 60px 0; }
-
 #timeline h2,
 #timeline h3,
 #timeline .row p {
@@ -402,10 +394,8 @@ aside {
   display: block;
   font-size: 14px;
   padding: 5px 0; }
-
 .activity-box > .activity-date {
   border-bottom: 1px solid #555; }
-
 .activity-box > .activity-name {
   font-weight: 700; }
 

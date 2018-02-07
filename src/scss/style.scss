@@ -47,11 +47,11 @@ body {
 }
 
 @media (max-width: 767px) {
-    
+
     body {
         font-size: 16px;
     }
-    
+
 }
 
 h1, h2, h3 {
@@ -126,15 +126,15 @@ section:not(#skills) {
 }
 
 @media (max-width: 767px) {
-    
+
     .row {
         @include flexColumn;
     }
-    
+
     [class*="col-"]+[class*="col-"] {
         margin-left: 0;
     }
-    
+
 }
 
 [class*="btn"] {
@@ -216,12 +216,12 @@ header {
 }
 
 @media (orientation: landscape) and (max-width: 767px) {
-    
+
     header p {
         background: rgba(234, 242, 248, .8);
         margin: 0 auto;
     }
-    
+
 }
 
 /* ------------------------------------------- NAVBAR */
@@ -264,10 +264,10 @@ header {
 }
 
 @media (max-width: 767px) {
-    
+
     .navbar {
         position: absolute;
-    
+
         label {
             cursor: pointer;
             display: block;
@@ -275,7 +275,7 @@ header {
             line-height: 60px;
             text-align: center;
         }
-    
+
         ul {
             display: none;
 
@@ -283,7 +283,7 @@ header {
                 border-bottom: 3px solid transparent;
             }
         }
-    
+
         input:checked {
             ~ ul {
                 display: block;
@@ -293,12 +293,12 @@ header {
                 display: none;
             }
         }
-        
+
         input:not(:checked) ~ label>i:last-of-type {
             display: none;
         }
     }
-    
+
 }
 
 /* ------------------------------------------- SECTION ABOUT */
@@ -360,11 +360,11 @@ header {
 }
 
 @media (max-width: 767px) {
-    
+
     #skills .pg-group, .skills-img p {
         padding: 0 15px;
     }
-    
+
 }
 
 /* PROGRESS BAR */
@@ -447,7 +447,7 @@ header {
         @include flexCenter;
         @include transition(.5s);
         @include flexWrap;
-    
+
         >h2 {
             margin: 0;
         }
@@ -456,12 +456,12 @@ header {
             margin: 10px 0;
         }
     }
-    
+
     &:hover .hidden-lg {
         top: 0;
     }
 }
-    
+
 .promote::after {
     text-shadow: 0 0 4px #a67c00;
     content: "\f005";
@@ -479,7 +479,7 @@ header {
         border-top: 1px solid #999;
         position: static;
     }
-    
+
 }
 
 @media (max-width: 767px) {
@@ -487,7 +487,7 @@ header {
     .project {
         width: 100%;
     }
-    
+
 }
 
 
@@ -523,26 +523,30 @@ aside {
             }
 
             &:nth-of-type(3) {
-                fill: #00C8FF;
+                fill: #DD0031;
             }
 
             &:nth-of-type(4) {
-                fill: #563D7C;
+                fill: #00C8FF;
             }
 
             &:nth-of-type(5) {
-                fill: #CC6699;
+                fill: #563D7C;
             }
 
             &:nth-of-type(6) {
-                fill: #21759B;
+                fill: #CC6699;
             }
 
             &:nth-of-type(7) {
-                fill: #181717;
+                fill: #21759B;
             }
 
             &:nth-of-type(8) {
+                fill: #181717;
+            }
+
+            &:nth-of-type(9) {
                 fill: #F14E32;
             }
         }
@@ -585,7 +589,7 @@ aside {
         font-size: 14px;
         padding: 5px 0;
     }
-    
+
     >.activity-date {
         @extend .activity;
         border-bottom: 1px solid #555;
